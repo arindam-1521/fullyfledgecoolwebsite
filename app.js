@@ -45,7 +45,7 @@ app.post("/Contact", (req, res) => {
     var myData = new Contact(req.body);
     myData.save().then(() => {
             // res.send("This item is saved to the database")
-            res.render("success.ejs")
+            res.render("Successnew.ejs")
         }).catch(() => {
             // res.status(400).send("Item was not saved to database.")
             res.status(400).render("error.ejs")
