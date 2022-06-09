@@ -9,7 +9,7 @@ const connectionparams = {
 
     }
     // const uri = process.env.MONGODB_URI;
-mongoose.connect("mongodb+srv://joypradhan:SnLbw6q-p9dF6KS@cluster0.eqnuobf.mongodb.net/FullFledged?retryWrites=true&w=majority", connectionparams).then(() => { console.log("connected to the db") }).catch((e) => { console.log(e) })
+mongoose.connect("mongodb+srv://joypradhan:SnLbw6q-p9dF6KS@cluster0.eqnuobf.mongodb.net/FullFledged?retryWrites=true&w=majority", connectionparams).then(() => { console.log("connected to the MondoDb Atlas Server") }).catch(() => { console.log("Running on localhost port.") })
 
 
 
