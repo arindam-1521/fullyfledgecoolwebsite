@@ -17,8 +17,8 @@ var contactSchema = new mongoose.Schema({
     name: String,
     age: String,
     email: String,
-    gender: String,
-    desc: String
+    phone: String,
+    message: String
 })
 var Contact = mongoose.model('Contact', contactSchema);
 
@@ -38,7 +38,7 @@ app.get("/About", (req, res) => {
 })
 app.get("/Contact", (req, res) => {
     const params = {}
-    res.render("Contact.ejs", params)
+    res.render("Contactnew.ejs", params)
 })
 
 app.post("/Contact", (req, res) => {
