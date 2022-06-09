@@ -34,7 +34,7 @@ app.get("/", (req, res) => {
 })
 app.get("/About", (req, res) => {
     const params = {}
-    res.render("About.ejs", params)
+    res.render("aboutnew.ejs", params)
 })
 app.get("/Contact", (req, res) => {
     const params = {}
