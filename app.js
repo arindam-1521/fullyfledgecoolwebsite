@@ -48,7 +48,7 @@ app.post("/Contact", (req, res) => {
             res.render("Successnew.ejs")
         }).catch(() => {
             // res.status(400).send("Item was not saved to database.")
-            res.status(400).render("error.ejs")
+            res.status(400).render("errornew.ejs")
         })
         // res.status(200).render("contact.pug")
 })
